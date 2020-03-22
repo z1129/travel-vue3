@@ -1,0 +1,110 @@
+{
+    "ret":true,
+    "data": {
+        "city":"北京",
+        "iconlist": [
+            {
+                "id": 1,
+                "src": "https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+                "desc": "酒店"
+            },
+            {
+                "id": 2,
+                "src": "https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+                "desc": "酒店"
+            },
+            {
+                "id": 3,
+                "src": "https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+                "desc": "酒店"
+            },
+            {
+                "id": 4,
+                "src": "https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+                "desc": "酒店"
+            },
+            {
+                "id": 5,
+                "src": "https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+                "desc": "酒店"
+            },
+            {
+                "id": 6,
+                "src": "https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+                "desc": "酒店"
+            },
+            {
+                "id": 7,
+                "src": "https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+                "desc": "酒店"
+            },
+            {
+                "id": 8,
+                "src": "https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+                "desc": "酒店"
+            },
+            {
+                "id": 9,
+                "src": "https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+                "desc": "酒店"
+            },
+            {
+                "id": 10,
+                "src": "https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+                "desc": "酒店"
+            }
+        ],
+        "recommendList": [
+            {
+                "id": "001",
+                "title": "普陀岛",
+                "desc": "大理·洱海",
+                "src": "https://imgs.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg"
+            },
+            {
+                "id": "002",
+                "title": "普陀岛",
+                "desc": "大理·洱海",
+                "src": "https://imgs.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg"
+            },
+            {
+                "id": "003",
+                "title": "普陀岛",
+                "desc": "大理·洱海",
+                "src": "https://imgs.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg"
+            },
+            {
+                "id": "004",
+                "title": "普陀岛",
+                "desc": "大理·洱海",
+                "src": "https://imgs.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg"
+            }
+        ],
+        "weekendList": [
+            {
+                "id": "001",
+                "title": "普陀岛",
+                "desc": "大理·洱海",
+                "src": "https://imgs.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg"
+            },
+            {
+                "id": "002",
+                "title": "普陀岛",
+                "desc": "大理·洱海",
+                "src": "https://imgs.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg"
+            },
+            {
+                "id": "003",
+                "title": "普陀岛",
+                "desc": "大理·洱海",
+                "src": "https://imgs.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg"
+            },
+            {
+                "id": "004",
+                "title": "普陀岛",
+                "desc": "大理·洱海",
+                "src": "https://imgs.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg"
+            }
+        ]
+    }
+}

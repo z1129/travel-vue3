@@ -2,7 +2,7 @@
     <div class="weekend">
         <div class="hot-recommend">周末旅游</div>
         <ul>
-            <li class="item-warp border-bottom" v-for="item in recommendList" :key="item.id">
+            <li class="item-warp border-bottom" v-for="item in weekendList" :key="item.id">
                 <div class="img-wrapp">
                     <img :src="item.src" alt="阿欧">
                 </div>
@@ -18,35 +18,8 @@
 <script>
 export default {
     name: 'HomeWeekend',
-    data(){
-        return {
-            recommendList: [
-                {
-                    id: '001',
-                    title: '普陀岛1',
-                    desc: '大理·洱海',
-                    src: 'https://imgs.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg'
-                },
-                {
-                    id: '002',
-                    title: '普陀岛2',
-                    desc: '大理·洱海',
-                    src: 'https://imgs.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg'
-                },
-                {
-                    id: '003',
-                    title: '普陀岛3',
-                    desc: '大理·洱海',
-                    src: 'https://imgs.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg'
-                },
-                {
-                    id: '004',
-                    title: '普陀岛',
-                    desc: '大理·洱海',
-                    src: 'https://imgs.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg'
-                }
-            ]
-        }
+    props:{
+        weekendList: Array
     }
     
 }

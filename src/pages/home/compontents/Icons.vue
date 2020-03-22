@@ -20,59 +20,13 @@ export default {
         return {
             swiperOption: {
                 
-            },
-            iconlist: [
-                {
-                    id: 1,
-                    src: 'https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-                    desc: '酒店1'
-                },
-                {
-                    id: 2,
-                    src: 'https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-                    desc: '酒店2'
-                },
-                {
-                    id: 3,
-                    src: 'https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-                    desc: '酒店3'
-                },
-                {
-                    id: 4,
-                    src: 'https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-                    desc: '酒店4'
-                },
-                {
-                    id: 5,
-                    src: 'https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-                    desc: '酒店5'
-                },
-                {
-                    id: 6,
-                    src: 'https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-                    desc: '酒店6'
-                },
-                {
-                    id: 7,
-                    src: 'https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-                    desc: '酒店7'
-                },
-                {
-                    id: 8,
-                    src: 'https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-                    desc: '酒店8'
-                },
-                {
-                    id: 9,
-                    src: 'https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-                    desc: '酒店8'
-                },
-                {
-                    id: 10,
-                    src: 'https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-                    desc: '酒店8'
-                }
-            ]
+            }
+            // iconlist: []
+        }
+    },
+    props: {
+        iconlist: {
+            type: Array
         }
     },
     computed: {

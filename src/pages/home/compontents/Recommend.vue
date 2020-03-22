@@ -17,35 +17,8 @@
 <script>
 export default {
     name: 'HomeRecommend',
-    data(){
-        return {
-            recommendList: [
-                {
-                    id: '001',
-                    title: '普陀岛1',
-                    desc: '大理·洱海',
-                    src: 'https://imgs.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg'
-                },
-                {
-                    id: '002',
-                    title: '普陀岛2',
-                    desc: '大理·洱海',
-                    src: 'https://imgs.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg'
-                },
-                {
-                    id: '003',
-                    title: '普陀岛3',
-                    desc: '大理·洱海',
-                    src: 'https://imgs.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg'
-                },
-                {
-                    id: '004',
-                    title: '普陀岛',
-                    desc: '大理·洱海',
-                    src: 'https://imgs.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg'
-                }
-            ]
-        }
+    props:{
+        recommendList: Array
     }
     
 }

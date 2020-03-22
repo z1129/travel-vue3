@@ -5,7 +5,7 @@
             <i class="iconfont icon-sousuo"></i>
             输入城市/景点游玩主题</div>
         <div class="header-right">
-            城市
+            {{city}}
             <i class="iconfont icon-jiantouarrow483"></i>
         </div>
     </div>
@@ -13,7 +13,10 @@
 
 <script>
 export default {
-    name: 'HomeHeader'
+    name: 'HomeHeader',
+    props: {
+        city: String
+    }
 }
 </script>
 

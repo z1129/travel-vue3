@@ -4,10 +4,12 @@
         <div class="header-input">
             <i class="iconfont icon-sousuo"></i>
             输入城市/景点游玩主题</div>
-        <div class="header-right">
-            {{city}}
-            <i class="iconfont icon-jiantouarrow483"></i>
-        </div>
+        <router-link to="/city">
+            <div class="header-right">
+                {{city}}
+                <i class="iconfont icon-jiantouarrow483"></i>
+            </div>
+        </router-link>
     </div>
 </template>
 
@@ -46,4 +48,5 @@ export default {
     .header-right
         width 1.24rem
         text-align center
+        color #fff
 </style>

@@ -6,7 +6,7 @@
             输入城市/景点游玩主题</div>
         <router-link to="/city">
             <div class="header-right">
-                {{city}}
+                {{citys}}
                 <i class="iconfont icon-jiantouarrow483"></i>
             </div>
         </router-link>
@@ -14,10 +14,16 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
     name: 'HomeHeader',
     props: {
         city: String
+    },
+    computed:{
+        ...mapState({
+            citys: 'city'
+        })
     }
 }
 </script>
@@ -46,7 +52,8 @@ export default {
         line-height .64rem
         padding-left .2rem
     .header-right
-        width 1.24rem
+        min-width 1.24rem
+        padding 0 .1rem
         text-align center
         color #fff
 </style>

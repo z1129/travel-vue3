@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from '@/router/router.js'
 import axios from './utils/axios'
+import store from '@/store'
 import './assets/styles/reset.css'
 import './assets/styles/border.css'
 import fastClick from 'fastclick'
@@ -17,5 +18,6 @@ Vue.use(VueAwesomeSwiper, /* { default global options } */)
 
 new Vue({
   render: h => h(App),
-  router
+  router,
+  store
 }).$mount('#app')

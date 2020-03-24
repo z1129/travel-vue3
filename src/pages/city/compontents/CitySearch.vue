@@ -4,7 +4,7 @@
             <input type="text" v-model="keyword" placeholder="输入城市名或拼音" class="search-input">
         </div>
         <ul class="search-list" v-show="keyword" ref="search">
-            <li class="search-item border-bottom" v-for="item in list" :key= "item.id" >{{item.name}}</li>
+            <li class="search-item border-bottom" v-for="item in list" :key= "item.id"  @click="handlecity(item.name)">{{item.name}}</li>
             <li class="search-item border-bottom" v-show="hasNoData" style="text-align:center">暂无数据</li>
         </ul>
     </div>
@@ -12,6 +12,7 @@
 
 <script>
 import BScroll from 'better-scroll'
+import { mapMutations } from 'vuex'
 export default {
     name: 'CityHeader',
     props: {
@@ -52,6 +53,14 @@ export default {
     },
     mounted(){
         this.scroll = new BScroll(this.$refs.search)
+    },
+    methods: {
+        ...mapMutations(['changecity']),
+        handlecity(city){
+            // this.$store.commit('changecity', city)
+            this.changecity(city)
+            this.$router.push('/')
+        }
     }
 }
 </script>

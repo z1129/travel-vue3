@@ -1,6 +1,7 @@
 //vue.config.js
 const data = require('./static/mock/index.json')
 const citydata = require('./static/mock/city.json')
+const detaildata = require('./static/mock/detail.json')
 const path = require('path');
 
 function resolve (dir) {
@@ -45,6 +46,10 @@ module.exports = {
       app.get('/api/city.json', (req, res) => {
         res.json(citydata)
       })
+      app.get('/api/detail.json', (req, res) => {
+        res.json(detaildata)
+      })
+      
       // 在浏览器输入localhost:8080/api/data就可以拿到数据了
     }
   }

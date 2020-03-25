@@ -1,34 +1,39 @@
 <template>
     <div>
         <div class="banner" @click="hangleBannerClick">
-            <img class="banner-img" src="https://img1.qunarzz.com/p/tts6/1612/6f/9aacc855cb61e902.jpg_r_640x420x95_a0b41223.jpg" alt="">
+            <img class="banner-img" :src="bannerImg" alt="">
             <div class="info">
-                <div class="info-name">产品编号 1907782332</div>
+                <div class="info-name">{{sightName}}</div>
                 <div class="info-number">
                     <i class="iconfont icon-tupian"></i>
-                    18
+                    {{gallaryImgs.length}}
             </div>
             </div>
         </div>
-        <gallary :imgs="imgs" v-show="show" @changeClose= "hangleBannerClose"></gallary>
+        <fade>
+            <gallary :gallaryImgs="gallaryImgs" v-show="show" @changeClose= "hangleBannerClose"></gallary>
+        </fade>
     </div>
     
 </template>
 
 <script>
 import Gallary from 'common/gallary/Gallary.vue'
+import Fade from 'common/Fade.vue'
 export default {
     name: 'Banner',
     components:{
-        Gallary
+        Gallary,
+        Fade
+    },
+    props: {
+        gallaryImgs: Array,
+        bannerImg: String,
+        sightName: String
     },
     data() {
         return {
-            show: false,
-            imgs: [
-                "https://img1.qunarzz.com/p/tts6/1612/6f/9aacc855cb61e902.jpg_r_640x420x95_a0b41223.jpg",
-                "https://img1.qunarzz.com/p/tts9/1612/47/f8788e49d32cbe02.jpg_r_1280x840x95_656ceaf9.jpg"
-            ]
+            show: false
         }
     },
     methods: {

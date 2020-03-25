@@ -3,7 +3,7 @@
       <div class="wrapper">
           <swiper :options="swiperOption" ref="mySwiper">
             <!-- slides -->
-            <swiper-slide v-for="(item,index) in imgs" :key="index">
+            <swiper-slide v-for="(item,index) in gallaryImgs" :key="index">
                 <img class="swiper-img" :src="item">
             </swiper-slide>
             <!-- Optional controls -->
@@ -17,7 +17,7 @@
 export default {
     name: 'Gallary',
     props: {
-        imgs:{
+        gallaryImgs:{
             type: Array,
             default: () => []
         }

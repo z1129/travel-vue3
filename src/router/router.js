@@ -5,6 +5,7 @@ Vue.use(Router)
 import Home from '@/pages/home/Home.vue'
 import List from '@/pages/list/List.vue'
 import City from '@/pages/city/City.vue'
+import Detail from '@/pages/detail/Detail.vue'
 
 
 export default new Router({
@@ -23,6 +24,11 @@ export default new Router({
             path: '/city',
             name: 'City',
             component: City
+        },
+        {
+            path: '/detail/:id',
+            name: 'Detail',
+            component: Detail
         }
     ]
 })
